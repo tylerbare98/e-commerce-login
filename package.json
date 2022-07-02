@@ -8,10 +8,9 @@
     "start": "node server.js"
   },
   "name": "e-commerce-store",
-  "description": "",
+  "description": "run with \"npx nodemon server.js\"",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tylerbare98/e-commerce-store.git"
