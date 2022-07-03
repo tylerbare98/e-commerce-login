@@ -40,7 +40,7 @@ userSchema.virtual("password")
     return this._password
 })
 
-userSchema.methods{
+userSchema.methods = {
     encryptPassword: function(password){
         if(!password) return '';
         try{
