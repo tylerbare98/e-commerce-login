@@ -8,3 +8,6 @@ MongoDB Atlas connected through using mongoose
 # routes/controller folder
 routes: lets you create a fodler of different routes to keep server file cleaner. 
 controllers:lets you define functions for individual routes to executs to keep routes files clean
+
+# Postman / Thunder client
+if you get a 401 error, gitpod has a cookie then needs to be set

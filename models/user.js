@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const crypto = require("crypto"); //to hash password
-const uuidv1 = require("uuid/v1") //gives random string
+const uuidv1 = require("uuidv1") //gives random string
 
 const userSchema = new mongoose.Schema({
     name:{
@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
     }
 },{timestamps: true})
 
-userSchema.virtual("password")
+userSchema.virtual("password") //creates virtual variable not stored in DB
 .set(function(password){
     this._password = password,
     this.salt = uuidv1(),

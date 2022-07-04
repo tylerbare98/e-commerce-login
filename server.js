@@ -1,10 +1,13 @@
 //requires
-const express = require('express')
-const mongoose = require('mongoose')
-require('dotenv').config()
+const express = require('express');
+const mongoose = require('mongoose');
+const morgan = require('morgan'); //tool for logging http request info
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+require('dotenv').config();
 
 //app
-const app = express()
+const app = express();
 
 //database
 mongoose.connect(process.env.DATABASE, {
@@ -18,13 +21,20 @@ mongoose.connection.on("connected", (err, res) => {
 })
 
 //variables?
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8000;
 
-// Importing all the routes
+//middleware
+app.use(morgan('dev'));
+app.use(bodyParser.json());
+app.use(cookieParser());
+
+//routes
 const homeroute = require("./routes/user.js")
 
 //routes
 app.use("/", homeroute)
+
+
 
 
 app.listen(port, () => {
