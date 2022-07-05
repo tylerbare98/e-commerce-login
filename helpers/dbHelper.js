@@ -12,7 +12,7 @@ exports.errorHandler = error => {
                     //console.log("************************");
                     //console.log(error.message);
                     let email = error.keyValue.email;
-                    message = (`"${email}" already exists`);
+                    message = (`${email} already exists`);
                 } catch (ex) {
                     message = "Unique email already exists";
                 }
