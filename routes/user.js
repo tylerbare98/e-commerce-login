@@ -7,8 +7,6 @@ const {check, validationResult} = require('express-validator');
 
 
 //Handling get request
-router.post('/', 
-        expressValidator.signup(),
-        userControllers.signup);
+router.post('/', expressValidator.signup(), userControllers.signup);
   
 module.exports = router

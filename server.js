@@ -34,9 +34,6 @@ const homeroute = require("./routes/user.js")
 //routes
 app.use("/", homeroute)
 
-
-
-
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
