@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "86e2feae-d92a-43fb-8c46-21d34883b351",
+    "colName": "Testing Backend",
+    "created": "2022-07-05T19:22:20.316Z",
+    "sortNum": 10000,
+    "folders": [],
+    "settings": {
+      "headers": [],
+      "tests": []
+    }
+  }
+]
