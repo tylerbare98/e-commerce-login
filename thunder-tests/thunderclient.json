@@ -8,17 +8,17 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2022-07-05T19:22:33.766Z",
-    "modified": "2022-07-06T16:09:26.183Z",
+    "modified": "2022-07-06T19:57:04.705Z",
     "headers": [
       {
         "name": "Cookie",
-        "value": "ajs_anonymous_id=a3612def-4e2a-4ac5-af24-89c7acc8ba33; gitpod-marketing-website-visited=true; _gcl_au=1.1.604135044.1656333611; gitpod-user=true; _gitpod_io_=s:97be1eb3-99ba-41f0-a22a-e59e79ebfaaf.yBu0mQOztRWjO54EhXxlZvERm1hYtvPwy8EhshJ28Wc; _gitpod_io_ws_3d76c0b1-866d-40d7-afef-ce571783879d_owner_=lVaxJpLYiuv7R0TUxTD4XCTo4xZgJIZY; _gitpod_io_ws_7b740956-64d9-41cc-80dc-d3b4f267ad08_owner_=P.aOt3R4dYTGiEiV7NdEK5Ta7glTNn1r; _gitpod_io_ws_6ed724cd-080b-4e5c-87b8-061a69c0a5d9_owner_=U_moOVKbANNIVWF3oJr2Si8gR86Zehsp; _gitpod_io_ws_a548da01-afa6-4e8e-8f0a-d7b47ebd566e_owner_=MKOuA49FAqb8L.mYVXmHtmBdwch6ySdo; _gitpod_io_ws_0463c5f5-25bd-4918-9be3-bd9314b18a8c_owner_=NL_6OgvMSCQ8z5688nJamwA9UCq19dQs; _gitpod_io_ws_3806bb71-c236-4b07-bdce-e90324f35460_owner_=YRsjJ4c.tx0nW9ynuQ2CLWtxNSlpFwCq"
+        "value": "ajs_anonymous_id=a3612def-4e2a-4ac5-af24-89c7acc8ba33; gitpod-marketing-website-visited=true; _gcl_au=1.1.604135044.1656333611; gitpod-user=true; _gitpod_io_=s:97be1eb3-99ba-41f0-a22a-e59e79ebfaaf.yBu0mQOztRWjO54EhXxlZvERm1hYtvPwy8EhshJ28Wc; _gitpod_io_ws_3806bb71-c236-4b07-bdce-e90324f35460_owner_=YRsjJ4c.tx0nW9ynuQ2CLWtxNSlpFwCq; _gitpod_io_ws_222cc409-d9e9-4757-b29b-92770b9115ce_owner_=kljIdJ1XwsPGL5P3G6zzCqC8HfksPObb"
       }
     ],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n    \"name\" : \"alex\",\n    \"email\" : \"email2@email.com\",\n    \"password\" : \"\"\n}",
+      "raw": "{\n    \"name\" : \"alex\",\n    \"email\" : \"test@email.com\",\n    \"password\" : \"Abc123!^#\"\n}",
       "form": []
     },
     "tests": []
