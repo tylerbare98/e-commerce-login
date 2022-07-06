@@ -1,4 +1,3 @@
-//requires
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan'); //tool for logging http request info
@@ -20,7 +19,7 @@ mongoose.connection.on("connected", (err, res) => {
   console.log("mongoose is connected")
 })
 
-//variables?
+//variables
 const port = process.env.PORT || 8000;
 
 //middleware
@@ -34,6 +33,7 @@ const homeroute = require("./routes/user.js")
 //routes
 app.use("/", homeroute)
 
+//specify what port to listen on
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

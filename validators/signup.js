@@ -1,8 +1,10 @@
-
+/*
+    Code to handle what type of validations to perform. 
+*/
 const {check, validationResult} = require('express-validator');
 
-exports.signup = function(req, res) {
-    
+//validation requirement for the user signing up
+exports.signup = function(req, res) { 
     return [
         check('name', 'Name is required').notEmpty(),
         check('email', 'Invalid email').isEmail(),
@@ -13,3 +15,4 @@ exports.signup = function(req, res) {
             .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i")
     ]
 };
+
