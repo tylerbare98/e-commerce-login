@@ -13,7 +13,7 @@
     "uuidv1": "^1.6.14"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "npx nodemon server.js"
   },
   "name": "e-commerce-store",
   "description": "run with \"npx nodemon server.js\"",

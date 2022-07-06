@@ -1,14 +1,15 @@
 
 tasks:
-  - init: npm install -g npm
+  - init: npm install -g npm #init runs during prebuild
   - init: npm init -y
-  - init: npm install express nodemon dotenv mongoose crypto uuidv1 body-parser morgan cookie-parser express-validator #runs during prebuild
-    
+  - init: npm install express nodemon dotenv mongoose crypto uuidv1 body-parser morgan cookie-parser  
+  - init: npm install  express-validator jsonwebtoken
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 3000
+  - port: 8000
     onOpen: open-preview
+    
 
 vscode:
   extensions:
