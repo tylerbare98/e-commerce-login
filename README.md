@@ -2,6 +2,7 @@
 Run app with "npx nodemon server.js" ----use "pkill node" if doesn't work
 Updated: run app with "npm start" as it is a script executing the above code in .gitpod.yml.
 .gitpod.yml has setting for displayin page onOpen: open-preview that can be open-browser, or turned off.
+.env file needs the PORT, DATABASE and random string for JWT
 
 ###### setting up DB
 MongoDB Atlas connected through using mongoose
